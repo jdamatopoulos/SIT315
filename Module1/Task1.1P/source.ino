@@ -37,9 +37,9 @@ void loop()
   if (motion != value)
   {
     /*
-	* Updating motion value, printing motion value to console.
+    * Updating motion value, printing motion value to console.
     */
-	motion = value;
+    motion = value;
     Serial.println(motion);
   }
   
@@ -49,16 +49,16 @@ void loop()
   if (value == HIGH) 
   {
     /*
-	* Writing to console, outputting the motion to the LED
-	*/
+    * Writing to console, outputting the motion to the LED
+    */
     Serial.println("MOTION DETECTED!");
     digitalWrite(13, HIGH);
   }
   else
   {
     /*
-	* Outputting when motion ends to the LED
-	*/
-  	digitalWrite(13, LOW);
+    * Outputting when motion ends to the LED
+    */
+    digitalWrite(13, LOW);
   }
 }
