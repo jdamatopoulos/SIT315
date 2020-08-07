@@ -34,18 +34,18 @@ void loop()
 */
 void detectMotion()
 {
-  	/*
+    /*
     * Checking if motion is detected
     */
-  	if (digitalRead(input) == HIGH)
-  	{
-	  /*
+    if (digitalRead(input) == HIGH)
+    {	
+      /*
       * Prinint that motion is detected, setting LED to 'HIGH'.
       */
       Serial.println("MOTION DETECTED!");
       digitalWrite(led, HIGH);
     }
-  	else 
+    else 
     {
       /*
       * Printing that motion is not detected, setting LED to 'LOW'.
